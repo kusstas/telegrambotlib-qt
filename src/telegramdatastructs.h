@@ -419,6 +419,7 @@ struct TelegramBotFile : public TelegramBotObject {
     QString link; // Generated Absolute link to picture
     QDateTime validUntil; // Genetated valid time
 
+    TelegramBotFile() = default;
     TelegramBotFile(QJsonObject object) { this->fromJson(object); }
 
     // parse logic
